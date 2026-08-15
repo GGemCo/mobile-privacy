@@ -4,177 +4,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Deus.exe 개인정보처리방침 및 Privacy Policy">
-    <title>Deus.exe 개인정보처리방침 / Privacy Policy</title>
-    <style>
-        :root {
-            color-scheme: light dark;
-            --background: #f5f7fa;
-            --surface: #ffffff;
-            --text: #202124;
-            --muted: #5f6368;
-            --border: #dfe3e8;
-            --accent: #3157c8;
-            --accent-soft: #eef2ff;
-            --notice: #7a4d00;
-            --notice-background: #fff7e5;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --background: #111318;
-                --surface: #191c22;
-                --text: #eef1f5;
-                --muted: #b7bec8;
-                --border: #343a45;
-                --accent: #9bb2ff;
-                --accent-soft: #202a49;
-                --notice: #ffd58a;
-                --notice-background: #392b14;
-            }
-        }
-
-        * { box-sizing: border-box; }
-
-        html { scroll-behavior: smooth; }
-
-        body {
-            margin: 0;
-            background: var(--background);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
-            "Apple SD Gothic Neo", Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.72;
-            overflow-wrap: anywhere;
-        }
-
-        main {
-            width: min(960px, calc(100% - 32px));
-            margin: 32px auto;
-            padding: clamp(24px, 5vw, 56px);
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
-        }
-
-        h1, h2, h3 { line-height: 1.35; }
-        h1 { margin: 0 0 12px; font-size: clamp(1.8rem, 5vw, 2.6rem); }
-        h2 { margin-top: 64px; padding-top: 8px; font-size: 1.7rem; }
-        h3 { margin-top: 36px; font-size: 1.24rem; }
-
-        p, li { max-width: 78ch; }
-        a { color: var(--accent); }
-        code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
-
-        .meta { color: var(--muted); }
-
-        .required {
-            display: inline-block;
-            padding: 1px 7px;
-            border-radius: 5px;
-            color: var(--notice);
-            background: var(--notice-background);
-            font-weight: 700;
-        }
-
-        .language-nav {
-            position: sticky;
-            top: 12px;
-            z-index: 1;
-            display: flex;
-            gap: 8px;
-            width: fit-content;
-            margin: 24px 0 32px;
-            padding: 6px;
-            border: 1px solid var(--border);
-            border-radius: 999px;
-            background: var(--surface);
-        }
-
-        .language-nav a {
-            padding: 6px 14px;
-            border-radius: 999px;
-            text-decoration: none;
-            font-weight: 650;
-        }
-
-        .language-nav a:hover,
-        .language-nav a:focus-visible { background: var(--accent-soft); }
-
-        .table-wrap { overflow-x: auto; }
-
-        table {
-            width: 100%;
-            margin: 18px 0 28px;
-            border-collapse: collapse;
-            font-size: 0.95rem;
-        }
-
-        th, td {
-            padding: 12px 14px;
-            border: 1px solid var(--border);
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th { background: var(--accent-soft); }
-        section + section { border-top: 1px solid var(--border); }
-        .back-to-top { margin-top: 32px; font-size: 0.92rem; }
-
-        @media (max-width: 640px) {
-            main {
-                width: 100%;
-                margin: 0;
-                border: 0;
-                border-radius: 0;
-                box-shadow: none;
-            }
-
-            th, td { padding: 10px; }
-        }
-
-        @media print {
-            :root {
-                --background: #fff;
-                --surface: #fff;
-                --text: #000;
-                --muted: #444;
-                --border: #bbb;
-                --accent: #000;
-                --accent-soft: #eee;
-            }
-
-            body { font-size: 11pt; }
-            main { width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; }
-            .language-nav, .back-to-top { display: none; }
-            h2 { break-before: page; }
-            h3, table { break-inside: avoid; }
-            a { color: inherit; text-decoration: none; }
-        }
-    </style>
+    <meta name="description" content="Deus.exe 개인정보처리방침">
+    <title>Deus.exe 개인정보처리방침</title>
+    <link rel="stylesheet" href="./assets/css/privacy.css">
+    <script src="./assets/js/policy-meta.js" defer></script>
 </head>
 <body>
 <main id="top">
     <header>
-        <h1>Deus.exe 개인정보처리방침 / Privacy Policy</h1>
+        <h1>Deus.exe 개인정보처리방침</h1>
         <p class="meta">
-            시행일 / Effective date:
-            <span class="required">[필수 입력 / REQUIRED: YYYY-MM-DD]</span><br>
-            최종 수정일 / Last updated:
-            <span class="required">[필수 입력 / REQUIRED: YYYY-MM-DD]</span>
+            시행일:
+            <time data-policy-effective-date></time><br>
+            최종 수정일:
+            <time data-policy-last-updated></time>
         </p>
     </header>
 
     <section id="ko" lang="ko">
         <h2>개인정보처리방침</h2>
-        <p>GGemCo(이하 “회사”)는 모바일 게임 <strong>Deus.exe</strong>(패키지명: <code>com.ggemco.deus</code>, 이하 “게임”) 이용자의 개인정보를 중요하게 생각하며, 관련 법령에 따라 개인정보를 안전하고 투명하게 처리합니다.</p>
+        <p>GGemCo(이하 “회사”)는 모바일 게임 <strong>Deus.exe</strong>(이하 “게임”) 이용자의 개인정보를 중요하게 생각하며, 관련 법령에 따라 개인정보를 안전하고 투명하게 처리합니다.</p>
         <p>이 방침은 게임에서 사용 중인 Google Analytics for Firebase(GA4)와 사용자가 선택적으로 이동할 수 있는 외부 설문에 적용됩니다.</p>
 
         <h3>1. 처리하는 개인정보와 수집 방법</h3>
         <p>게임은 회원가입 또는 로그인을 요구하지 않으며, 이름, 전화번호, 주소와 같은 직접 식별정보를 게임 안에서 입력받지 않습니다. 다만, 게임 실행 시 Firebase SDK가 다음 정보를 자동으로 생성하거나 수집할 수 있습니다.</p>
-        <div class="table-wrap">
+        <div class="table-wrap" tabindex="0" role="region" aria-label="처리 개인정보 표">
             <table>
                 <thead><tr><th>구분</th><th>처리 항목</th><th>수집 방법</th></tr></thead>
                 <tbody>
@@ -210,7 +64,7 @@
         <p>Google Analytics 기능 제공을 위한 Google의 처리는 아래의 처리위탁 및 국외 이전 항목에 따릅니다.</p>
 
         <h3>5. 개인정보 처리위탁</h3>
-        <div class="table-wrap">
+        <div class="table-wrap" tabindex="0" role="region" aria-label="개인정보 처리위탁 표">
             <table>
                 <thead><tr><th>수탁자</th><th>위탁 업무</th></tr></thead>
                 <tbody><tr><td>Google LLC 및 그 계열사</td><td>Google Analytics for Firebase 제공, 게임 이용 통계의 수집·전송·보관·분석, 관련 시스템 운영 및 보안</td></tr></tbody>
@@ -220,7 +74,7 @@
 
         <h3>6. 개인정보의 국외 이전</h3>
         <p>게임은 GA4 제공을 위해 다음과 같이 정보를 국외로 이전할 수 있습니다.</p>
-        <div class="table-wrap">
+        <div class="table-wrap" tabindex="0" role="region" aria-label="개인정보 국외 이전 표">
             <table>
                 <tbody>
                 <tr><th>이전받는 자</th><td>Google LLC 및 그 계열사 (<a href="https://support.google.com/">Google 문의처</a>)</td></tr>
@@ -253,11 +107,7 @@
 
         <h3>10. 개인정보 보호책임자 및 문의처</h3>
         <ul>
-            <li>개인정보처리자: GGemCo</li>
-            <li>개인정보 보호책임자: <span class="required">[필수 입력: 성명 또는 담당 부서]</span></li>
-            <li>이메일: <span class="required">[필수 입력: 이용자가 실제로 연락할 수 있는 이메일 주소]</span></li>
-            <li>주소: <span class="required">[필수 입력: 사업자 주소]</span></li>
-            <li>웹사이트: <span class="required">[필수 입력: 공개 개인정보처리방침이 게시될 HTTPS 주소]</span></li>
+            <li>이메일: <span class="required">ggemco.master@gmail.com</span></li>
         </ul>
 
         <h3>11. 아동의 개인정보</h3>
