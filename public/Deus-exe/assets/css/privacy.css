@@ -203,9 +203,115 @@ section + section {
         margin-top: 44px;
     }
 
-    th,
-    td {
-        padding: 10px;
+    .table-wrap {
+        overflow-x: visible;
+    }
+
+    /* 다중 열 데이터는 작은 화면에서 행 단위 카드로 전환해 가로 잘림을 방지합니다. */
+    .data-table {
+        min-width: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    /* 머리글은 화면에서만 숨기고 표의 의미 구조는 보조 기술에 유지합니다. */
+    .data-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        border: 0;
+        white-space: nowrap;
+    }
+
+    .data-table tbody,
+    .data-table tr {
+        display: block;
+    }
+
+    .data-table tr {
+        margin-bottom: 16px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: var(--surface);
+    }
+
+    .data-table td {
+        display: grid;
+        grid-template-columns: minmax(92px, 32%) minmax(0, 1fr);
+        gap: 12px;
+        width: 100%;
+        padding: 12px;
+        border: 0;
+        border-bottom: 1px solid var(--border);
+        overflow-wrap: anywhere;
+    }
+
+    .data-table td:last-child {
+        border-bottom: 0;
+    }
+
+    .data-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 700;
+    }
+
+    /* 항목-설명 표는 모바일 폭 안에서 읽을 수 있도록 고정 비율의 2열을 사용합니다. */
+    .key-value-table {
+        min-width: 0;
+        table-layout: fixed;
+    }
+
+    .key-value-table th {
+        width: 34%;
+    }
+
+    .key-value-table td {
+        width: 66%;
+    }
+
+    .key-value-table th,
+    .key-value-table td {
+        padding: 12px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* 초소형 화면에서는 항목-설명 표도 행 단위 카드로 쌓아 가독성을 확보합니다. */
+@media (max-width: 380px) {
+    .key-value-table {
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .key-value-table tbody,
+    .key-value-table tr,
+    .key-value-table th,
+    .key-value-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .key-value-table tr {
+        margin-bottom: 16px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+    }
+
+    .key-value-table th,
+    .key-value-table td {
+        border: 0;
+    }
+
+    .key-value-table th {
+        border-bottom: 1px solid var(--border);
     }
 }
 

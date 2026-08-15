@@ -29,14 +29,14 @@
         <h3>1. Data We Process and How We Collect It</h3>
         <p>The Game does not require registration or login and does not ask users to enter direct identifiers such as their name, telephone number, or address in the Game. When the Game runs, however, the Firebase SDK may automatically generate or collect the following data:</p>
         <div class="table-wrap" tabindex="0" role="region" aria-label="Processed personal data table">
-            <table>
+            <table class="data-table">
                 <thead><tr><th>Category</th><th>Data</th><th>Collection method</th></tr></thead>
                 <tbody>
-                <tr><td>Device and identifiers</td><td>App-instance ID and Android Advertising ID, unless unavailable because of the device or user settings</td><td>Automatically collected by the Firebase Analytics SDK</td></tr>
-                <tr><td>Device and app information</td><td>Device model, operating system and version, language/region setting, app version, and package name</td><td>Automatically collected by the Firebase Analytics SDK</td></tr>
-                <tr><td>Approximate location</td><td>Country- or city-level approximate location derived from an IP address. Google states that Analytics uses IP addresses during collection but does not log or store them.</td><td>Automatically processed by the Firebase Analytics SDK</td></tr>
-                <tr><td>App activity</td><td>First open, session start, user engagement, screen views, and other app lifecycle and usage information</td><td>Automatically collected by the Firebase Analytics SDK</td></tr>
-                <tr><td>Gameplay information</td><td>Map entry and completion, player deaths, monsters defeated, items acquired or purchased in the Game, virtual currency spent, tutorial and quest progress, skill use, boss attempts, phases reached, results, duration, and related game-data UIDs, quantities, prices, and result values</td><td>Collected when an event occurs during gameplay</td></tr>
+                <tr><td data-label="Category">Device and identifiers</td><td data-label="Data">App-instance ID and Android Advertising ID, unless unavailable because of the device or user settings</td><td data-label="Collection method">Automatically collected by the Firebase Analytics SDK</td></tr>
+                <tr><td data-label="Category">Device and app information</td><td data-label="Data">Device model, operating system and version, language/region setting, app version, and package name</td><td data-label="Collection method">Automatically collected by the Firebase Analytics SDK</td></tr>
+                <tr><td data-label="Category">Approximate location</td><td data-label="Data">Country- or city-level approximate location derived from an IP address. Google states that Analytics uses IP addresses during collection but does not log or store them.</td><td data-label="Collection method">Automatically processed by the Firebase Analytics SDK</td></tr>
+                <tr><td data-label="Category">App activity</td><td data-label="Data">First open, session start, user engagement, screen views, and other app lifecycle and usage information</td><td data-label="Collection method">Automatically collected by the Firebase Analytics SDK</td></tr>
+                <tr><td data-label="Category">Gameplay information</td><td data-label="Data">Map entry and completion, player deaths, monsters defeated, items acquired or purchased in the Game, virtual currency spent, tutorial and quest progress, skill use, boss attempts, phases reached, results, duration, and related game-data UIDs, quantities, prices, and result values</td><td data-label="Collection method">Collected when an event occurs during gameplay</td></tr>
                 </tbody>
             </table>
         </div>
@@ -64,9 +64,9 @@
 
         <h3>5. Service Providers</h3>
         <div class="table-wrap" tabindex="0" role="region" aria-label="Service providers table">
-            <table>
+            <table class="data-table">
                 <thead><tr><th>Service provider</th><th>Services performed</th></tr></thead>
-                <tbody><tr><td>Google LLC and its affiliates</td><td>Provision of Google Analytics for Firebase; collection, transmission, storage, and analysis of Game usage statistics; related system operation and security</td></tr></tbody>
+                <tbody><tr><td data-label="Service provider">Google LLC and its affiliates</td><td data-label="Services performed">Provision of Google Analytics for Firebase; collection, transmission, storage, and analysis of Game usage statistics; related system operation and security</td></tr></tbody>
             </table>
         </div>
         <p>For more information, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
@@ -74,7 +74,7 @@
         <h3>6. International Data Transfers</h3>
         <p>To provide GA4, data may be transferred internationally as follows:</p>
         <div class="table-wrap" tabindex="0" role="region" aria-label="International data transfers table">
-            <table>
+            <table class="key-value-table">
                 <tbody>
                 <tr><th>Recipient</th><td>Google LLC and its affiliates (<a href="https://support.google.com/">Google support</a>)</td></tr>
                 <tr><th>Destination</th><td>The United States and other countries or regions in which Google or its subprocessors operate facilities</td></tr>
