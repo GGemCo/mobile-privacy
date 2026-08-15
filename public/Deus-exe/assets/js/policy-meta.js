@@ -8,8 +8,8 @@
      * @type {{effectiveDate: string, lastUpdated: string}}
      */
     const policyMeta = Object.freeze({
-        effectiveDate: "YYYY-MM-DD",
-        lastUpdated: "YYYY-MM-DD"
+        effectiveDate: "2026-08-16",
+        lastUpdated: "2026-08-16"
     });
 
     /**
