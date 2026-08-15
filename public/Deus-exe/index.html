@@ -1,0 +1,382 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Deus.exe 개인정보처리방침 및 Privacy Policy">
+    <title>Deus.exe 개인정보처리방침 / Privacy Policy</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --background: #f5f7fa;
+            --surface: #ffffff;
+            --text: #202124;
+            --muted: #5f6368;
+            --border: #dfe3e8;
+            --accent: #3157c8;
+            --accent-soft: #eef2ff;
+            --notice: #7a4d00;
+            --notice-background: #fff7e5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #111318;
+                --surface: #191c22;
+                --text: #eef1f5;
+                --muted: #b7bec8;
+                --border: #343a45;
+                --accent: #9bb2ff;
+                --accent-soft: #202a49;
+                --notice: #ffd58a;
+                --notice-background: #392b14;
+            }
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+            "Apple SD Gothic Neo", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.72;
+            overflow-wrap: anywhere;
+        }
+
+        main {
+            width: min(960px, calc(100% - 32px));
+            margin: 32px auto;
+            padding: clamp(24px, 5vw, 56px);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        h1, h2, h3 { line-height: 1.35; }
+        h1 { margin: 0 0 12px; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+        h2 { margin-top: 64px; padding-top: 8px; font-size: 1.7rem; }
+        h3 { margin-top: 36px; font-size: 1.24rem; }
+
+        p, li { max-width: 78ch; }
+        a { color: var(--accent); }
+        code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+
+        .meta { color: var(--muted); }
+
+        .required {
+            display: inline-block;
+            padding: 1px 7px;
+            border-radius: 5px;
+            color: var(--notice);
+            background: var(--notice-background);
+            font-weight: 700;
+        }
+
+        .language-nav {
+            position: sticky;
+            top: 12px;
+            z-index: 1;
+            display: flex;
+            gap: 8px;
+            width: fit-content;
+            margin: 24px 0 32px;
+            padding: 6px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: var(--surface);
+        }
+
+        .language-nav a {
+            padding: 6px 14px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 650;
+        }
+
+        .language-nav a:hover,
+        .language-nav a:focus-visible { background: var(--accent-soft); }
+
+        .table-wrap { overflow-x: auto; }
+
+        table {
+            width: 100%;
+            margin: 18px 0 28px;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            border: 1px solid var(--border);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th { background: var(--accent-soft); }
+        section + section { border-top: 1px solid var(--border); }
+        .back-to-top { margin-top: 32px; font-size: 0.92rem; }
+
+        @media (max-width: 640px) {
+            main {
+                width: 100%;
+                margin: 0;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            th, td { padding: 10px; }
+        }
+
+        @media print {
+            :root {
+                --background: #fff;
+                --surface: #fff;
+                --text: #000;
+                --muted: #444;
+                --border: #bbb;
+                --accent: #000;
+                --accent-soft: #eee;
+            }
+
+            body { font-size: 11pt; }
+            main { width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; }
+            .language-nav, .back-to-top { display: none; }
+            h2 { break-before: page; }
+            h3, table { break-inside: avoid; }
+            a { color: inherit; text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+<main id="top">
+    <header>
+        <h1>Deus.exe 개인정보처리방침 / Privacy Policy</h1>
+        <p class="meta">
+            시행일 / Effective date:
+            <span class="required">[필수 입력 / REQUIRED: YYYY-MM-DD]</span><br>
+            최종 수정일 / Last updated:
+            <span class="required">[필수 입력 / REQUIRED: YYYY-MM-DD]</span>
+        </p>
+        <nav class="language-nav" aria-label="언어 선택 / Language selection">
+            <a href="#ko">한국어</a>
+            <a href="#en" lang="en">English</a>
+        </nav>
+    </header>
+
+    <section id="ko" lang="ko">
+        <h2>개인정보처리방침</h2>
+        <p>GGemCo(이하 “회사”)는 모바일 게임 <strong>Deus.exe</strong>(패키지명: <code>com.ggemco.deus</code>, 이하 “게임”) 이용자의 개인정보를 중요하게 생각하며, 관련 법령에 따라 개인정보를 안전하고 투명하게 처리합니다.</p>
+        <p>이 방침은 게임에서 사용 중인 Google Analytics for Firebase(GA4)와 사용자가 선택적으로 이동할 수 있는 외부 설문에 적용됩니다.</p>
+
+        <h3>1. 처리하는 개인정보와 수집 방법</h3>
+        <p>게임은 회원가입 또는 로그인을 요구하지 않으며, 이름, 전화번호, 주소와 같은 직접 식별정보를 게임 안에서 입력받지 않습니다. 다만, 게임 실행 시 Firebase SDK가 다음 정보를 자동으로 생성하거나 수집할 수 있습니다.</p>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>구분</th><th>처리 항목</th><th>수집 방법</th></tr></thead>
+                <tbody>
+                <tr><td>기기 및 식별자</td><td>앱 인스턴스 ID, Android 광고 ID(기기 및 설정에 따라 이용할 수 없는 경우 제외)</td><td>Firebase Analytics SDK가 자동 수집</td></tr>
+                <tr><td>기기·앱 정보</td><td>기기 모델, 운영체제 및 버전, 언어·지역 설정, 앱 버전, 패키지명</td><td>Firebase Analytics SDK가 자동 수집</td></tr>
+                <tr><td>대략적 위치</td><td>IP 주소를 바탕으로 산출한 국가·도시 수준의 대략적 위치. Google Analytics는 수집 과정에서 IP 주소를 사용하지만 이를 기록하거나 저장하지 않는다고 안내합니다.</td><td>Firebase Analytics SDK가 자동 처리</td></tr>
+                <tr><td>앱 활동</td><td>최초 실행, 세션 시작, 사용자 참여, 화면 조회 등 앱 수명주기 및 이용 정보</td><td>Firebase Analytics SDK가 자동 수집</td></tr>
+                <tr><td>게임플레이 정보</td><td>맵 진입·클리어, 플레이어 사망, 몬스터 처치, 아이템 획득·게임 내 구매, 가상재화 사용, 튜토리얼·퀘스트 진행, 스킬 사용, 보스 도전·도달 페이즈·결과·소요시간 및 이에 관련된 게임 데이터 UID·수량·가격·결과 값</td><td>게임 플레이 중 이벤트 발생 시 수집</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>게임은 현재 Firebase Authentication, Firebase Crashlytics, Firebase Performance Monitoring, Unity Analytics, Unity Ads 또는 실제 결제를 처리하는 Unity IAP를 사용하지 않습니다. 게임 내 아이템 구매 및 가상재화 이벤트는 실제 화폐 결제가 아닌 게임플레이 분석 정보입니다.</p>
+        <p>게임은 회사가 임의로 정한 회원 ID, 이메일 주소 또는 이용자의 이름을 GA4 사용자 ID로 설정하지 않습니다.</p>
+
+        <h3>2. 개인정보 처리 목적</h3>
+        <p>회사는 위 정보를 다음 목적으로 처리합니다.</p>
+        <ul>
+            <li>이용자 수, 세션 및 게임 이용 현황에 대한 통계 작성</li>
+            <li>튜토리얼, 퀘스트, 맵, 스킬 및 보스 구간의 진행·이탈 분석</li>
+            <li>게임 난이도, 밸런스, 콘텐츠 및 사용자 경험 개선</li>
+            <li>비정상적으로 중복되거나 누락된 분석 이벤트 확인</li>
+            <li>서비스 운영 계획과 업데이트 효과 분석</li>
+        </ul>
+        <p>회사는 위 정보를 이용하여 이용자에게 맞춤 광고를 표시하지 않으며, 현재 게임에는 광고 SDK가 포함되어 있지 않습니다. 향후 광고, 로그인, 실제 결제, 오류 보고 또는 새로운 분석 도구를 도입하는 경우 이 방침과 Google Play 데이터 보안 정보를 사전에 갱신합니다.</p>
+
+        <h3>3. 처리 및 보유 기간</h3>
+        <p>GA4의 이벤트 수준 사용자 데이터는 회사가 Google Analytics 속성에서 설정한 보유기간 동안 보관됩니다. 표준 GA4 속성에서 선택할 수 있는 이벤트 데이터 보유기간은 2개월 또는 14개월이며, 회사는 목적 달성에 필요한 최소 기간을 설정합니다. 설정된 기간이 지나면 해당 이벤트 수준 데이터는 Google의 정기 삭제 절차에 따라 삭제됩니다.</p>
+        <p>GA4의 표준 집계 보고서는 이벤트 수준 데이터 보유 설정의 적용을 받지 않을 수 있습니다. 회사는 더 이상 필요하지 않은 집계 자료를 내부 운영 목적상 필요한 기간을 초과하여 별도로 보관하지 않습니다.</p>
+        <p>관계 법령에 따라 일정 기간 보관할 의무가 있는 경우에는 해당 법령에서 정한 기간 동안만 보관합니다.</p>
+
+        <h3>4. 개인정보의 제3자 제공</h3>
+        <p>회사는 이용자의 개인정보를 판매하지 않습니다. 또한 이용자의 개인정보를 이 방침에 기재한 목적을 벗어나 제3자에게 제공하지 않습니다. 다만, 이용자가 별도로 동의하거나 법령에 특별한 규정이 있는 경우는 예외로 합니다.</p>
+        <p>Google Analytics 기능 제공을 위한 Google의 처리는 아래의 처리위탁 및 국외 이전 항목에 따릅니다.</p>
+
+        <h3>5. 개인정보 처리위탁</h3>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>수탁자</th><th>위탁 업무</th></tr></thead>
+                <tbody><tr><td>Google LLC 및 그 계열사</td><td>Google Analytics for Firebase 제공, 게임 이용 통계의 수집·전송·보관·분석, 관련 시스템 운영 및 보안</td></tr></tbody>
+            </table>
+        </div>
+        <p>Google의 개인정보 처리에 관한 자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> 및 <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 및 보안 안내</a>에서 확인할 수 있습니다.</p>
+
+        <h3>6. 개인정보의 국외 이전</h3>
+        <p>게임은 GA4 제공을 위해 다음과 같이 정보를 국외로 이전할 수 있습니다.</p>
+        <div class="table-wrap">
+            <table>
+                <tbody>
+                <tr><th>이전받는 자</th><td>Google LLC 및 그 계열사 (<a href="https://support.google.com/">Google 문의처</a>)</td></tr>
+                <tr><th>이전 국가</th><td>미국을 포함하여 Google 또는 그 수탁자가 시설을 운영하는 국가·지역</td></tr>
+                <tr><th>이전 항목</th><td>제1조의 기기·식별자, 기기·앱 정보, 대략적 위치, 앱 활동 및 게임플레이 정보</td></tr>
+                <tr><th>이전 목적</th><td>게임 이용 통계의 수집·보관·분석 및 Firebase Analytics 서비스 제공</td></tr>
+                <tr><th>이전 시기 및 방법</th><td>게임 실행 및 분석 이벤트 발생 시 암호화된 네트워크(TLS)를 통한 전송</td></tr>
+                <tr><th>보유·이용 기간</th><td>제3조의 GA4 보유기간 및 Google의 삭제 절차에 따름</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>회사는 적용 법령에 따른 적법한 국외 이전 근거와 보호조치를 마련합니다. 이용자는 제10조의 연락처를 통해 국외 이전에 관한 문의 또는 허용되는 범위의 처리 정지를 요청할 수 있습니다. 다만, 분석 처리를 중지하면 게임 이용 통계에 해당 이용 기록이 더 이상 반영되지 않을 수 있습니다.</p>
+
+        <h3>7. 선택적 외부 설문</h3>
+        <p>게임은 데모 종료 화면 등에서 이용자의 선택에 따라 Google Forms 설문 페이지를 외부 브라우저로 열 수 있습니다. 링크를 여는 것만으로 회사가 게임 내부에서 설문 답변을 수집하지는 않으며, 이용자가 설문을 작성하여 제출한 경우에만 설문 응답이 처리됩니다.</p>
+        <p>한글 및 영문 설문은 이름, 이메일 주소, 전화번호, 계정 정보 등 이용자를 직접 식별할 수 있는 개인정보를 요구하거나 수집하도록 설정되어 있지 않습니다. 회사는 이용자가 제출한 익명의 설문 응답을 게임 개선과 이용자 의견 분석 목적으로만 이용합니다. 이용자는 자유서술 답변에 자신이나 다른 사람의 개인정보를 입력하지 않아야 합니다. Google Forms 접속 및 이용 과정에서 Google이 자체적으로 처리하는 정보에는 Google의 개인정보처리방침이 적용됩니다.</p>
+
+        <h3>8. 개인정보의 파기</h3>
+        <p>회사는 처리 목적이 달성되거나 보유기간이 끝난 개인정보를 지체 없이 파기합니다. 전자적 파일은 복구 또는 재생하기 어렵도록 삭제하며, GA4에 보관된 데이터는 Google Analytics의 데이터 삭제 및 보유기간 설정을 이용하여 삭제합니다. 법령에 따라 별도 보관하는 정보는 다른 정보와 분리하여 보관하고 해당 기간이 끝나면 파기합니다.</p>
+
+        <h3>9. 이용자의 권리와 행사 방법</h3>
+        <p>이용자는 관계 법령이 정한 범위에서 자신의 개인정보에 대한 열람, 정정, 삭제, 처리정지 및 동의 철회를 요청할 수 있습니다. 요청은 제10조의 연락처로 접수할 수 있으며, 회사는 본인 확인이 가능한 범위에서 지체 없이 처리합니다.</p>
+        <p>게임은 회원 계정이나 회사가 지정한 사용자 ID를 사용하지 않으므로, 특정 개인과 GA4 앱 인스턴스 데이터를 연결하여 확인하거나 삭제하는 데 기술적 제한이 있을 수 있습니다. 이용자는 다음 방법으로 추가 수집을 제한할 수 있습니다.</p>
+        <ul>
+            <li>게임 내 개인정보/분석 설정이 제공되는 버전에서는 해당 설정을 비활성화</li>
+            <li>Android 설정에서 광고 ID를 삭제 또는 재설정하고 광고 개인정보 보호 설정 변경</li>
+            <li>게임을 삭제하여 기기에 저장된 로컬 게임 데이터 삭제</li>
+        </ul>
+        <p>게임 삭제는 이미 전송되어 집계된 GA4 보고서를 자동으로 삭제하지 않습니다. 개별 요청 처리가 가능한지 확인하려면 제10조의 연락처로 문의해 주십시오.</p>
+
+        <h3>10. 개인정보 보호책임자 및 문의처</h3>
+        <ul>
+            <li>개인정보처리자: GGemCo</li>
+            <li>개인정보 보호책임자: <span class="required">[필수 입력: 성명 또는 담당 부서]</span></li>
+            <li>이메일: <span class="required">[필수 입력: 이용자가 실제로 연락할 수 있는 이메일 주소]</span></li>
+            <li>주소: <span class="required">[필수 입력: 사업자 주소]</span></li>
+            <li>웹사이트: <span class="required">[필수 입력: 공개 개인정보처리방침이 게시될 HTTPS 주소]</span></li>
+        </ul>
+
+        <h3>11. 아동의 개인정보</h3>
+        <p>게임은 만 14세 미만 아동을 대상으로 설계된 서비스가 아닙니다. 회사가 법정대리인의 동의 없이 만 14세 미만 아동의 개인정보를 처리한 사실을 알게 된 경우 관련 법령에 따라 해당 정보를 지체 없이 삭제합니다. 보호자는 제10조의 연락처를 통해 삭제를 요청할 수 있습니다.</p>
+
+        <h3>12. 안전성 확보조치</h3>
+        <p>회사는 개인정보의 분실, 도난, 유출, 위조, 변조 또는 훼손을 방지하기 위해 접근 권한 제한, 전송 구간 암호화(TLS), 관리자 계정 보호, 최소 수집 및 정기 점검 등 합리적인 기술적·관리적 보호조치를 시행합니다.</p>
+
+        <h3>13. 방침의 변경</h3>
+        <p>이 방침의 내용이 변경되는 경우 회사는 시행일 전에 게임 내 공지, 배포 페이지 또는 회사 웹사이트를 통해 알립니다. 수집 항목, 이용 목적 또는 제3자 제공 등 이용자의 권리에 중대한 영향을 미치는 내용이 변경되는 경우에는 관계 법령이 요구하는 방법으로 별도 고지하거나 동의를 받습니다.</p>
+        <p class="back-to-top"><a href="#top">맨 위로</a></p>
+    </section>
+
+    <section id="en" lang="en">
+        <h2>Privacy Policy</h2>
+        <p>GGemCo (“we,” “us,” or the “Company”) respects the privacy of users of the mobile game <strong>Deus.exe</strong> (package name: <code>com.ggemco.deus</code>, the “Game”) and processes personal data transparently and securely in accordance with applicable law.</p>
+        <p>This Policy applies to Google Analytics for Firebase (GA4) used by the Game and to optional external surveys that a user may choose to open.</p>
+
+        <h3>1. Data We Process and How We Collect It</h3>
+        <p>The Game does not require registration or login and does not ask users to enter direct identifiers such as their name, telephone number, or address in the Game. When the Game runs, however, the Firebase SDK may automatically generate or collect the following data:</p>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Category</th><th>Data</th><th>Collection method</th></tr></thead>
+                <tbody>
+                <tr><td>Device and identifiers</td><td>App-instance ID and Android Advertising ID, unless unavailable because of the device or user settings</td><td>Automatically collected by the Firebase Analytics SDK</td></tr>
+                <tr><td>Device and app information</td><td>Device model, operating system and version, language/region setting, app version, and package name</td><td>Automatically collected by the Firebase Analytics SDK</td></tr>
+                <tr><td>Approximate location</td><td>Country- or city-level approximate location derived from an IP address. Google states that Analytics uses IP addresses during collection but does not log or store them.</td><td>Automatically processed by the Firebase Analytics SDK</td></tr>
+                <tr><td>App activity</td><td>First open, session start, user engagement, screen views, and other app lifecycle and usage information</td><td>Automatically collected by the Firebase Analytics SDK</td></tr>
+                <tr><td>Gameplay information</td><td>Map entry and completion, player deaths, monsters defeated, items acquired or purchased in the Game, virtual currency spent, tutorial and quest progress, skill use, boss attempts, phases reached, results, duration, and related game-data UIDs, quantities, prices, and result values</td><td>Collected when an event occurs during gameplay</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>The Game currently does not use Firebase Authentication, Firebase Crashlytics, Firebase Performance Monitoring, Unity Analytics, Unity Ads, or Unity IAP for real-money payments. In-game item-purchase and virtual-currency events are gameplay analytics and do not represent real-money transactions.</p>
+        <p>The Game does not set a Company-created account ID, email address, or user name as a GA4 User-ID.</p>
+
+        <h3>2. Purposes of Processing</h3>
+        <p>We process the data described above to:</p>
+        <ul>
+            <li>Measure users, sessions, and general Game usage;</li>
+            <li>Analyze progression and drop-off in tutorials, quests, maps, skills, and boss encounters;</li>
+            <li>Improve game difficulty, balance, content, and user experience;</li>
+            <li>Identify abnormally duplicated or missing analytics events; and</li>
+            <li>Evaluate service operation plans and the effects of updates.</li>
+        </ul>
+        <p>We do not use this data to display personalized advertising, and the Game currently contains no advertising SDK. If we later introduce advertising, login, real-money payments, crash reporting, or new analytics tools, we will update this Policy and the Google Play Data safety disclosure before or when the change takes effect.</p>
+
+        <h3>3. Retention</h3>
+        <p>User-level event data in GA4 is retained for the period configured by us in the Google Analytics property. A standard GA4 property allows an event-data retention period of 2 or 14 months, and we select the shortest period reasonably necessary for the purposes described in this Policy. When the configured period expires, event-level data is deleted through Google’s regular deletion process.</p>
+        <p>Standard aggregated GA4 reports may not be affected by the event-data retention setting. We do not separately retain aggregated reports beyond the period reasonably necessary for internal operations. If applicable law requires retention, we retain only the required data for the legally required period.</p>
+
+        <h3>4. Disclosure to Third Parties</h3>
+        <p>We do not sell personal data. We do not disclose personal data to third parties outside the purposes described in this Policy unless the user separately consents or applicable law requires or permits the disclosure.</p>
+        <p>Google’s processing to provide Google Analytics is described below as service-provider processing and an international transfer.</p>
+
+        <h3>5. Service Providers</h3>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Service provider</th><th>Services performed</th></tr></thead>
+                <tbody><tr><td>Google LLC and its affiliates</td><td>Provision of Google Analytics for Firebase; collection, transmission, storage, and analysis of Game usage statistics; related system operation and security</td></tr></tbody>
+            </table>
+        </div>
+        <p>For more information, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+
+        <h3>6. International Data Transfers</h3>
+        <p>To provide GA4, data may be transferred internationally as follows:</p>
+        <div class="table-wrap">
+            <table>
+                <tbody>
+                <tr><th>Recipient</th><td>Google LLC and its affiliates (<a href="https://support.google.com/">Google support</a>)</td></tr>
+                <tr><th>Destination</th><td>The United States and other countries or regions in which Google or its subprocessors operate facilities</td></tr>
+                <tr><th>Data transferred</th><td>Device and identifiers, device and app information, approximate location, app activity, and gameplay information described in Section 1</td></tr>
+                <tr><th>Purpose</th><td>Collection, storage, and analysis of Game usage statistics and provision of Firebase Analytics</td></tr>
+                <tr><th>Timing and method</th><td>Transmitted over an encrypted network connection (TLS) when the Game runs and analytics events occur</td></tr>
+                <tr><th>Retention</th><td>The GA4 retention period and Google deletion processes described in Section 3</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>We implement a lawful transfer mechanism and appropriate safeguards as required by applicable law. Users may contact us using Section 10 to ask about an international transfer or request restriction of processing where legally available. Restricting analytics processing may prevent future usage records from appearing in the Game’s analytics statistics.</p>
+
+        <h3>7. Optional External Survey</h3>
+        <p>At a demo completion screen or similar point, the Game may allow a user to choose to open a Google Forms survey in an external browser. Merely opening the link does not cause us to collect survey answers inside the Game. Survey responses are processed only if the user completes and submits the form.</p>
+        <p>The Korean and English surveys are not configured to request or collect direct identifiers such as a name, email address, telephone number, or account information. We use anonymous survey responses only to improve the Game and analyze user feedback. Users should not enter their own or another person’s personal data in a free-text response. Google’s Privacy Policy applies to information that Google independently processes when a user accesses or uses Google Forms.</p>
+
+        <h3>8. Deletion</h3>
+        <p>We delete personal data without undue delay when its purpose has been fulfilled or its retention period expires. Electronic files are deleted using methods designed to prevent practical recovery or restoration. Data stored in GA4 is deleted using Google Analytics retention and data-deletion controls. Data retained because of a legal obligation is kept separately and deleted when that period ends.</p>
+
+        <h3>9. User Rights and Choices</h3>
+        <p>Subject to applicable law, users may request access, correction, deletion, restriction of processing, or withdrawal of consent. Requests may be submitted using the contact information in Section 10, and we will respond without undue delay after completing any reasonably necessary verification.</p>
+        <p>Because the Game does not use member accounts or a Company-assigned User-ID, there may be technical limits on locating or deleting GA4 app-instance data associated with a particular individual. Users can limit additional collection by:</p>
+        <ul>
+            <li>Disabling the privacy/analytics option in versions of the Game that provide such a setting;</li>
+            <li>Deleting or resetting the Android Advertising ID and changing ads privacy settings in Android; and</li>
+            <li>Uninstalling the Game to delete locally stored Game data from the device.</li>
+        </ul>
+        <p>Uninstalling the Game does not automatically delete GA4 reports that have already been transmitted and aggregated. Please contact us under Section 10 to ask whether an individual request can be fulfilled.</p>
+
+        <h3>10. Privacy Contact</h3>
+        <ul>
+            <li>Data controller: GGemCo</li>
+            <li>Privacy officer or responsible team: <span class="required">[REQUIRED: name or team]</span></li>
+            <li>Email: <span class="required">[REQUIRED: monitored contact email]</span></li>
+            <li>Address: <span class="required">[REQUIRED: business address]</span></li>
+            <li>Website: <span class="required">[REQUIRED: public HTTPS URL where this Policy will be posted]</span></li>
+        </ul>
+
+        <h3>11. Children’s Privacy</h3>
+        <p>The Game is not designed for children under the age of 14. If we learn that we processed personal data of a child under 14 without verifiable consent from a legal representative, we will delete it without undue delay as required by applicable law. A parent or guardian may request deletion using the contact information in Section 10.</p>
+
+        <h3>12. Security</h3>
+        <p>We apply reasonable technical and organizational measures designed to prevent loss, theft, unauthorized disclosure, alteration, or destruction of personal data. These measures include access controls, encryption in transit using TLS, protection of administrative accounts, data minimization, and periodic review.</p>
+
+        <h3>13. Changes to This Policy</h3>
+        <p>If this Policy changes, we will provide notice before the effective date through an in-Game notice, the distribution page, or our website. If a change materially affects user rights, including a change to the categories collected, purposes, or disclosures, we will provide separate notice or obtain consent where required by law.</p>
+        <p class="back-to-top"><a href="#top">Back to top</a></p>
+    </section>
+</main>
+</body>
+</html>
